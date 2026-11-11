@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pendaftaran Kegiatan</title>
+        <link rel="stylesheet" href="style.css"></head>
+<body>
+    <header>
+        <h1>Pendaftaran Kegiatan Mahasiswa</h1>
+        <p>Daftarkan diri untuk mengikuti pelatihan karier</p></header>
+        <nav>
+<a href="index.html">Home</a>
+<a href="pustakawan.html">Pustakawan</a>
+<a href="jadwal.html">Jadwal</a>
+<a href="galeri.html">Galeri</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+<main>
+    <section class="form-section">
+        <h2 class="section-title">Formulir Pendaftaran</h2>
+<form onsubmit="alert('Formulir contoh berhasil diisi. Data belum dikirim ke server.'); return false;">
+<label for="nama">Nama Lengkap</label>
+<input id="nama" name="nama" type="text" required>
+<label for="nim">NIM</label>
+<input id="nim" name="nim" type="text" required>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required>
+<fieldset>
+    <legend>Jenis Kelamin</legend>
+    <label class="inline">
+        <input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+        <label class="inline">
+            <input type="radio" name="gender" value="Perempuan"> Perempuan</label></fieldset>
+<label for="pelatihan">Pilihan Pelatihan</label>
+<select id="pelatihan" name="pelatihan" required>
+    <option value="">-- Pilih pelatihan --</option>
+    <option>Pelatihan Pencarian Referensi</option>
+    <option>Workshop Sitasi dan Daftar Pustaka</option>
+    <option>Pelatihan Karier Mahasiswa</option></select>
+<label for="semester">Semester</label><select id="semester" name="semester" required>
+    <option value="">-- Pilih semester --</option>
+    <option>Semester 1</option>
+    <option>Semester 2</option>
+    <option>Semester 3</option>
+    <option>Semester 4</option>
+    <option>Semester 5</option>
+    <option>Semester 6</option>
+    <option>Semester 7</option>
+    <option>Semester 8</option></select>
+<label for="alasan">Alasan Mengikuti</label>
+<textarea id="alasan" name="alasan" rows="4" required></textarea>
+<button type="submit">Daftar</button></form></section></main>
+<footer>&copy; 2026 Perpustakaan Digital Mahasiswa UNPAM SERANG</footer></body></html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+
+    <label>Masukkan Nama:</label>
+    <input type="text" id="nama" placeholder="Masukkan nama">
+    <button onclick="sapaNama()">Klik Saya</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function sapaNama() {
+            let nama = document.getElementById("nama").value;
+
+            if (nama === "") {
+                alert("Nama harus diisi!");
+                return;
+            }
+
+            alert("Halo, " + nama + "!");
+            console.log("Nama yang dimasukkan: " + nama);
+
+            let jawaban = prompt(
+                "Halo " + nama + ", apakah kamu siap belajar JavaScript?"
+            );
+
+            document.getElementById("hasil").innerHTML =
+                "Selamat belajar JavaScript, " + nama +
+                "!"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* ===== CSS Eksternal - Website Perpustakaan Digital ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #84064b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 { font-size: 28px; }
+header p { font-size: 14px; }
+
+/* Navigasi */
+nav { background-color: #b33284; text-align: center; }
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+}
+nav a:hover, nav a.aktif { background-color: #f2a900; color: #000; }
+
+/* Konten */
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+main h2 { color: #1f4e79; margin-bottom: 12px; }
+main h3 { margin: 18px 0 8px; }
+main p { margin-bottom: 12px; }
+ul { margin-left: 25px; }
+
+/* Profil pustakawan */
+.profil { display: flex; gap: 25px; align-items: flex-start; flex-wrap: wrap; }
+.profil img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; }
+
+/* Tabel */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #333; padding: 10px; text-align: center; }
+th { background-color: #1f4e79; color: white; }
+td.kiri { text-align: left; }
+
+/* Galeri */
+.galeri { display: flex; gap: 15px; flex-wrap: wrap; }
+.galeri img, video { width: 100%; max-width: 420px; border-radius: 6px; }
+
+/* Form */
+form label { display: block; margin-top: 12px; font-weight: bold; }
+form input[type="text"], form input[type="email"], form select, form textarea {
+  width: 100%; padding: 8px; margin-top: 4px;
+  border: 1px solid #999; border-radius: 4px;
+}
+form .radio { font-weight: normal; display: inline; margin-right: 15px; }
+button {
+  margin-top: 18px; padding: 10px 28px;
+  background-color: #1f4e79; color: white;
+  border: none; border-radius: 4px; font-size: 16px; cursor: pointer;
+}
+button:hover { background-color: #f2a900; color: #000; }
+
+/* Footer */
+footer {
+  background-color: #931854; color: white;
+  text-align: center; padding: 15px; margin-top: 30px; font-size: 14px;
+}
