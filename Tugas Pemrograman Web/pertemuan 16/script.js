@@ -6,7 +6,7 @@ console.log("Belajar perulangan");
 console.log("Belajar perulangan");
 
 // perulangan dengan for
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 7; i++) {
     console.log("Perulangan dengan for" + i);
 }
 

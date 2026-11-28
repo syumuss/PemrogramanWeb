@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.arena {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.arena h2 {
+    margin-top: 25px;
+    color: #333;
+}
+
+#btnKabur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+#btnKabur:hover {
+    background-color: #2980b9;
+}
